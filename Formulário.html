@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Formulário de inscrição</title>
+</head>
+<p> <a href="index.html"rel="prev" >Voltar para a página inicial</a></p>
+<body>
+    <img src="img/formulario.jpg" alt="Formulário">
+<h2>Inscrição Semana do tradutor</h2>
+<h4>6 a 8 de março de 2023</h4>
+<h5>Dúvidas, ligue para (55) 7845-2587 ou envie um e-mail: <a href="mailto:duvidas@semanadotradutor.com">duvidas@semanadotradutor.com</a> </h5>
+</body>
+<h4>Nome*</h4>
+<form>
+
+    <input type="text" name="nome" placeholder="Digite seu nome completo">
+    
+</form>
+<h4>E-mail*</h4>
+<form>
+
+       <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+
+ </form>
+ <h4>Você participará de quais dias?*</h4>
+ <form>
+
+    <input type="checkbox" name="Dia 1" value="Dia 1">Dia 1 <br>
+
+    <input type="checkbox" name="Dia 2" value="Dia 2">Dia 2 <br>
+
+    <input type="checkbox" name="Dia 3" value="Dia 3">Dia 3
+
+</form>
+<h4>Restrições alimentares*</h4>
+<form>
+
+    <input type="checkbox" name="Nenhuma" value="Nenhuma">Nenhuma <br>
+
+    <input type="checkbox" name="Vegetariano" value="Vegetariano">Vegetariano <br>
+
+    <input type="checkbox" name="Vegano" value="Vegano">Vegano <br>
+
+    <input type="checkbox"name="sem glúten" value="Sem glúten">Sem glúten <br>
+
+    <input type="checkbox"name="sem lactose" value="Sem lactose">Sem lactose <br>
+
+    <input type="checkbox"name="outros" value="Outros">Outros* 
+    <p>*Especifique aqui: <input type="text" name="outros"placeholder="Digite aqui sua restrição"</p>
+
+</form>
+<h4>Eu entendo que precisarei pagar R$500 na entrada*</h4>
+<form>
+    <input type="radio"name="sim ou não" value="sim">Sim <br>
+    <input type="radio"name="sim ou não" value="não">Não <br>
+</form>
+<br>
+<form>
+
+    <input type="button" value="Enviar minha inscrição" onclick="msg()">
+  
+  </form>
+  
+  <script>
+  
+  function msg() {
+  
+    alert("Você clicou no botão!");
+  
+  }
+  
+  </script>
+
+</html>
