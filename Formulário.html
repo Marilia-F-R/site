@@ -7,13 +7,16 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <title>Formulário de inscrição</title>
 </head>
-<p> <a href="index.html"rel="prev" >Voltar para a página inicial</a></p>
+<link rel="stylesheet" href="style.css">
+<p id="voltar"><a href="index.html"rel="prev" >Voltar para a página inicial</a></p>
 <body>
-    <img src="img/formulario.jpg" alt="Formulário">
-<h2>Inscrição Semana do tradutor</h2>
-<h4>6 a 8 de março de 2023</h4>
-<h5>Dúvidas, ligue para (55) 7845-2587 ou envie um e-mail: <a href="mailto:duvidas@semanadotradutor.com">duvidas@semanadotradutor.com</a> </h5>
+ <div>
+<h2 class="fonte">Formulário de inscrição - Semana do tradutor</h2>
+<h4 class="fonte1">6 a 8 de março de 2023</h4>
+<h5 class="fonte2">Dúvidas, ligue para (55) 7845-2587 ou envie um e-mail: <a href="mailto:duvidas@semanadotradutor.com">duvidas@semanadotradutor.com</a> </h5>
+</div> 
 </body>
+<div class="palestras1">
 <h4>Nome*</h4>
 <form>
 
@@ -50,10 +53,10 @@
     <input type="checkbox"name="sem lactose" value="Sem lactose">Sem lactose <br>
 
     <input type="checkbox"name="outros" value="Outros">Outros* 
-    <p>*Especifique aqui: <input type="text" name="outros"placeholder="Digite aqui sua restrição"</p>
+    <p>*Especifique aqui: <input type="text" name="outros"placeholder="Digite a restrição"</p>
 
 </form>
-<h4>Eu entendo que precisarei pagar R$500 na entrada*</h4>
+<h4>Estou ciente que precisarei pagar R$500 na entrada*</h4>
 <form>
     <input type="radio"name="sim ou não" value="sim">Sim <br>
     <input type="radio"name="sim ou não" value="não">Não <br>
@@ -69,10 +72,11 @@
   
   function msg() {
   
-    alert("Você clicou no botão!");
+    alert("Sua inscrição foi recebida com sucessso!");
   
   }
   
   </script>
-
+</div>
+<footer>Copyright © 2023 Semana do tradutor - Powered by Marilia</footer>
 </html>

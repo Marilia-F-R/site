@@ -7,84 +7,120 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <title>Semana do tradutor</title>
     <link rel="stylesheet" href="style.css"/>
-</head>
-<audio loop="loop" controls="controls">
-    <source src="audio/marybyrnong-noisy_oyster_CLIP.mp3" type="audio/mp3" />
-    Seu navegador não suporta HTML5
-    </audio>
-        <p> <a href="index.html">Página inicial</a> </p>
-    <p> <a href="Programação.html">Programação</a> </p>
-    <p> <a href="Palestrantes.html">Palestrantes</a> </p>
-    <p> <a href="Local.html">Local</a> </p>
-    <div>
-    <H5>de 06/03/2023 a 08/03/2023</H5>
-<h1>SEMANA DO TRADUTOR</h1>
-<h5>Clube do tradutor - Curitiba-PR</h5>
-</div>
-<body>
- <h2>Conferência de três dias com palestras, atividades e workshops</h2>
- <form>
+   </head>
+  <section class="barra_nav">
+    <div><img src="img/logo.ico" height="54" widht="40" alt="logo"></div>
+  <div id="som"><audio loop="loop" controls="controls">
+  <source src="audio/marybyrnong-noisy_oyster_CLIP.mp3" type="audio/mp3" />
+  Seu navegador não suporta HTML5
+  </audio></div>
+  <div id="barra_nav_direita">
+   <a href="index.html">Página inicial</a>
+   <a href="Programação.html">Programação</a>
+   <a href="Palestrantes.html">Palestrantes</a>
+   <a href="Local.html">Local</a>
+  </div>
+   </section>
+     <section id="cabecalho">
+     
+       <div id="letreiro1"><H5>de 06/03/2023 a 08/03/2023</H5>
+<div class="letreiro"><h1>SEMANA DO TRADUTOR</h1></div>
+<div id="letreiro2"><h5>Clube do tradutor - Curitiba/PR</h5></div>
+    </section>
+    <br>
+    <body>
+      <section class="inscrição">
+ <div class="inscrição1"><h2>Conferência de três dias com palestras, atividades e workshops</h2></div>
+ <br>
+ <button id="meuBotao">Faça aqui sua inscrição</button>
 
-    <input type="button" value="Faça aqui sua inscrição" onclick="msg()">
+<script>
+  // Obtém o elemento do botão pelo seu ID
+  var botao = document.getElementById('meuBotao');
   
-  </form>
-  
-  <script>
-  
-  function msg() {
-  
-    alert("Você clicou no botão!");
-  
-  }
-  
-  </script>
-  <p> <a href="Formulário.html">Formulário de inscrição</a></p>
-<h5>Dia 06/03 Desbravando as CAT Tools</h5>
+  // Adiciona um ouvinte de evento de clique ao botão
+  botao.addEventListener('click', function() {
+    // Redireciona para o URL desejado
+    window.location.href = 'Formulário.html';
+  });
+</script>
+
+  </section>
+<section class="palestras">
+  <div>
+<h5>Dia 06/03</h5>
+<h5>Desbravando as CAT Tools</h5>
 <img src="img/teclado.jpg" height="250" width="250" alt="Desbravando as CAT Tools">
-<h5>Dia 07/03 A importância dos dicionários online para o tradutor</h5>
+</div>
+<div>
+<h5>Dia 07/03</h5>
+<h5>A importância dos dicionários online para o tradutor</h5>
 <img src="img/diciomarios.jpg" height="250" width="250" alt="A importância dos dicionários online para o tradutor">
-<h5>Dia 08/03 Como gerenciar seu tempo</h5>
+</div>
+<div>
+<h5>Dia 08/03</h5>
+<h5>Como gerenciar seu tempo</h5>
 <img src="img/tempo.jpg" height="250" width="250" alt="Como gerenciar seu tempo">
-<h2>O objetivo desse evento é reunir tradutores para que possam fazer networking e aprimorar os conhecimentos na área de tradução.</h2>
-<img src="img/networking.jpg" height="25%" width="25%" alt="Networking e aprendizado contínuo">
+</div>
+</section>
+<br>
+<section class="imagem_corpo">
+ <h2>O objetivo desse evento é reunir tradutores para que possam fazer networking e aprimorar os conhecimentos na área de tradução.</h2>
+</section>
+<br>
+<div id="networking">
+<img src="img/networking.jpg" height="30%" width="30%" alt="Networking e aprendizado contínuo">
 <h6>Networking e aprendizado contínuo</h6>
-<h4>Palestrantes</h4>
+</div>
+<br>
+<section>
+  <div class="imagem_corpo" id="letra">
+  <h1>Palestrantes</h1>
+</div>
+  <br>
+  <section id="palestrantes">
+ <div>
 <img src="img/José Mendes.png" height="200" width="200" alt="Foto José Mendes">
 <p>José Mendes</p>
 <p>Tradutor especialista em CAT Tools</p>
-<br>
-<img src="img/Maria Candida.jpg" height="150" width="200" alt="Foto Maria Candida">
-<p>Maria Cândida Flores</p>
-<p>Mestre em tradução e palestrante</p>
-<br>
-<img src="img/Roberto Paché.jpg" height="200" width="200" alt="Roberto Paché">
+</div>
+<div>
+<img src="img/Roberto Paché.jpg" height="200" width="200" alt="Foto Roberto Paché">
 <p>Roberto Paché</p>
 <p>Psicólogo e tradutor</p>
+</div>
+<div>
+<img src="img/Maria Candida.jpg" height="200" width="200" alt="Foto Maria Cândida Flores">
+<p>Maria Cândida Flores</p>
+<p>Mestre em tradução e palestrante</p>
+</div>
+</section>
 <br>
-<h2>Clube do tradutor</h2>
-<p>Clube para palestras, reuniões e hospedagem para grandes eventos.</p>
-<p>Avenida 22 de maio, 2275 - Curitiba-PR</p>
-<img src="img/mulher no PC.jpg" height="200" width="250" alt="Imagem">
-<img src="img/reunião de mulheres.jpg" height="200" width="250" alt="Imagem 2">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.17971565362!2d-49.42988468950316!3d-25.495050064635603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1679688084888!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<section>
+  <section id="endereço">
+<h3>Clube do tradutor</h3>
+<h4>Clube para palestras, reuniões e hospedagem para grandes eventos.</h4>
+<h4>Avenida 22 de maio, 2275 - Curitiba-PR</h4>
+</section>
+<br>
+<section id="mapa">
+  <div>
+<img src="img/mulher no PC.jpg" height="200" width="350" alt="Imagem">
+<img src="img/reunião de mulheres.jpg" height="200" width="350" alt="Imagem 2">
+</div>
+<div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.17971565362!2d-49.42988468950316!3d-25.495050064635603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1679688084888!5m2!1spt-BR!2sbr" width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<br>
+  <div id="youtube">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f29acmECBG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<h3>Contamos com sua presença!</h3>
-<form>
-
-    <input type="button" value="Faça aqui sua inscrição" onclick="msg()">
-  
-  </form>
-  
-  <script>
-  
-  function msg() {
-  
-    alert("Você clicou no botão!");
-  
-  }
-  
-  </script>
-  <p> <a href="Formulário.html">Formulário de inscrição</a></p>
+</div>
+<br>
+<section class="inscrição">
+  <div class="inscrição1"><h2>Contamos com sua presença!</h2></div>
+</section>
 </body>
 <footer>Copyright © 2023 Semana do tradutor - Powered by Marilia</footer>
 </html>
